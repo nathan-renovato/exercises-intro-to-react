@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: gainsboro;
+  background-image: url('./assets/background.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  font-family: sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 50px 100px;
+  position: relative;
+}
+
+.developer-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.developer-information p {
+  font-size: 35px;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+
+.developer-name {
+  align-items: baseline;
+  display: flex;
+  gap: 20px;
+}
+
+.developer-name span {
+  color: gray;
+  font-size: 22px;
+}
+
+.image-developer {
+  position: relative;
+}
+
+.developer-carousel-buttons {
+  bottom: 0px;
+  left: 60px;
+  position: absolute;
+}
+
+.carousel-buttons {
+  all: unset;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.previous-button {
+  border-bottom-left-radius: 50%;
+  border-right: none;
+  border-top-left-radius: 50%
+}
+
+.next-button {
+  border-bottom-right-radius: 50%;
+  border-left: none;
+  border-top-right-radius: 50%;
+}
